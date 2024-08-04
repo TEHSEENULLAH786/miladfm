@@ -1,0 +1,14 @@
+<ul class="card-actions main-title astro-AUKn0YGn">
+	<li class="astro-AUKn0YGn">
+		<a  class="action astro-AUKn0YGn" [ngClass]="{'active': selectedTimeframe === 'daily'}"
+			(click)="setTimeframe('daily')">Daily</a>
+	</li>
+	<li class="astro-AUKn0YGn">
+		<a  class="action astro-AUKn0YGn" [ngClass]="{'active': selectedTimeframe === 'weekly'}"
+			(click)="setTimeframe('weekly')">Weekly</a>
+	</li>
+	<li class="astro-AUKn0YGn">
+		<a  class="action astro-AUKn0YGn" [ngClass]="{'active': selectedTimeframe === 'monthly'}"
+			(click)="setTimeframe('monthly')">Monthly</a>
+	</li>
+</ul>

@@ -1,0 +1,16 @@
+
+<div [ngClass]="['time-card', activity.title.toLowerCase(), 'astro-nesk0cro']" tabindex="0">
+  <div class="card-upper astro-nesk0cro">
+    <div class="category astro-nesk0cro">{{ activity.title }}</div>
+    <a href="#" class="dots astro-nesk0cro"><img src="assets/images/menu.svg" alt="Toggle settings" class="astro-nesk0cro" /></a>
+  </div>
+  <div class="card-lower astro-nesk0cro">
+    <div class="current-hrs astro-nesk0cro">
+      {{ current }} <span>hrs</span>
+    </div>
+    <div class="previous-hrs astro-nesk0cro">
+      {{ previousLabel }} - {{ previous }} <span>hrs</span>
+    </div>
+  </div>
+</div>
+

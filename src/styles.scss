@@ -1,1 +1,27 @@
-/* You can add global styles to this file, and also import other style files */
+@import './assets/styles/app';
+
+html {
+	box-sizing: border-box;
+	scroll-behavior: smooth
+}
+
+@media (prefers-reduced-motion: reduce) {
+	html {
+			scroll-behavior: auto
+	}
+}
+
+
+
+body {
+	display: grid;
+	place-items: center;
+	height: 100vh;
+	color: var(--font-color);
+	font-family: var(--font-family-special);
+	background: var(--background);
+	text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
+	text-rendering: optimizeLegibility;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+}

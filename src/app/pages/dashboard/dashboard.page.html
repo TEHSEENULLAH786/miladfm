@@ -1,0 +1,22 @@
+
+
+<main id="main-content" class="astro-PXnMfDZF">
+  <div class="container astro-ldKR6c5M">
+		<div class="user-card astro-AUKn0YGn">
+			<div class="the-user astro-AUKn0YGn">
+				<div class="user-avatar astro-AUKn0YGn">
+					<img src="assets/images/avatar.png" alt="Jeremy Robson profile picture" class="astro-AUKn0YGn" />
+				</div>
+				<div class="user-name astro-AUKn0YGn">
+					<span class="astro-AUKn0YGn">Report for</span>
+					<h1 class="astro-AUKn0YGn">Stacey Castillo</h1>
+				</div>
+			</div>
+			<timeframe-switcher-widget (timeframeChange)="onTimeframeChange($event)" [selectedTimeframe]="selectedTimeframe"></timeframe-switcher-widget>
+
+		</div>
+    <div class="card__wrapper astro-nesk0cro" *ngFor="let activity of activities">
+      <app-ticket-card [activity]="activity" [timeframe]="selectedTimeframe"></app-ticket-card>
+    </div>
+  </div>
+</main>

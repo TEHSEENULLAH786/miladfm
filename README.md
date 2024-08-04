@@ -1,27 +1,69 @@
-# Miladfm
+# Personal Ticket-Tracking Dashboard
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.3.
+## Table of Contents
 
-## Development server
+- [Getting Started](#getting-started)
+- [Project Structure](#project-structure)
+- [Challenges](#challenges)
+- [Additional Notes](#additional-notes)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Getting Started
 
-## Code scaffolding
+### Prerequisites
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Make sure you have the following installed on your machine:
 
-## Build
+- [Node.js](https://nodejs.org/en/download/)
+- [Angular CLI](https://angular.io/cli) (version 13 or above)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Installation
 
-## Running unit tests
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/your-repo/personal-ticket-tracking-dashboard.git
+    ```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+2. Navigate to the project directory:
+    ```bash
+    cd personal-ticket-tracking-dashboard
+    ```
 
-## Running end-to-end tests
+3. Install dependencies:
+    ```bash
+    npm install
+    ```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### Running the App
 
-## Further help
+1. Start the development server:
+    ```bash
+    ng serve
+    ```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+2. Open your browser and navigate to `http://localhost:4200/`.
+
+## Project Structure
+
+The project follows a modular structure, organizing components, services, and interfaces into separate folders for maintainability and scalability. Key folders include:
+
+- `src/app/core`: Contains core services and interfaces.
+- `src/app/shared`: Contains shared components and widgets.
+- `src/app/pages/dashboard`: Contains the dashboard page component.
+
+## Challenges
+
+### Most Difficult Part
+
+The most challenging part of this project was managing the state of the selected timeframe in the parent `DashboardPage` component while correctly emitting and handling events in the child `TimeframeSwitcherComponent`.
+
+### Easiest Part
+
+The easiest part was setting up the initial project structure and creating the basic components using Angular CLI. Leveraging Angular's powerful CLI tools made it straightforward to generate and scaffold components, services, and interfaces.
+
+## Additional Notes
+
+- **Styling**: A separate `variables.scss` file was created for managing CSS variables, which helps in maintaining consistent styling across the application.
+- **Performance**: Implementing Angular's change detection strategies and leveraging `SSR` could further optimize the application's performance.
+
+Feel free to reach out if you have any questions or need further clarifications.
+

@@ -1,0 +1,23 @@
+:root {
+  --primary-blue: #5847eb;
+  --primary-orange: #ff8c66;
+  --primary-cyan: #56c2e6;
+  --primary-pink: #ff5c7c;
+  --primary-green: #4acf81;
+  --primary-purple: #7536d3;
+  --primary-yellow: #f1c65b;
+  --neutral-darkest: #0f1424;
+  --neutral-dark: #1c1f4a;
+  --neutral-desaturated: #6f76c8;
+  --neutral-pale: #bdc1ff;
+  --radius-small: 3px;
+  --radius-large: 6px;
+  --gap-default: 2rem;
+  --font-measure: 70ch;
+  --font-family-special: "Rubik", sans-serif;
+  --font-color: var(--primary-blue);
+  --action-color: var(--secondary-clr-500);
+  --background: var(--neutral-darkest);
+  --primary-background: var(--primary-clr-100);
+  --neutral-background: var(--neutral-clr-200);
+}
